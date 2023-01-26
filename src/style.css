@@ -1,0 +1,15 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("./src/Roboto/Roboto-Black.ttf") format("truetype"),
+        url("./src/Roboto/Roboto-Black.woff") format("woff"),
+        url("./src/Roboto/Roboto-Black.woff2") format("woff2"),
+        url("./src/Roboto/Roboto-Black.eot") format("eot"),
+        url("./src/Roboto/Roboto-Black.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+*{  font-family: "Roboto";
+    margin: 0;
+    } 
