@@ -31,22 +31,21 @@
 
 .expertise h2 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 2vw;
-    color: rgb(28, 4, 82);
-
+    font-size: 2.2vw;
+    color: black;
 }
 
 .expertise p {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 1vw;
+    font-size: 1.2vw;
     color: black;
     padding: 3%;
     width: 100%;
 }
 
 .expertise #line {
-    background-color: lightgrey;
-    border-color: lightgrey;
+    background-color: rgb(232, 232, 232);
+    border-color: rgb(232, 232, 232);
     width: 5vw;
     height: 2px;
 }
@@ -54,9 +53,10 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 60%;
-    grid-gap: 3px;
-    border-color: lightgrey;
+    width: 65%;
+    grid-gap: 1px;
+    background-color: rgb(232, 232, 232);
+    margin-top: 5vh;
 }
 
 .grid-item {
@@ -64,13 +64,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40vh;
-    width: 17vw;
+    height: 30vh;
+    width: 100%;
+    background-color: white;
     
 }
 
 .expertise-icon {
-    width: 25px;
+    height: 25px;
 }
 
 .expertise-link {
