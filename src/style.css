@@ -18,14 +18,11 @@
 /* header here */
 header {
     background-image: url(./design-assets/bgk-header.png);
-    /* 
+    height: 40vw;
+    width: 100%;
+    min-height: fit-content;
     
-   max-width: 100%;
-    height: 440px;
-    
-   
-    border: solid;
-    border-color: brown; */
+    border-color: brown; 
     background-repeat: no-repeat;
     margin:0 auto;
     background-size: cover;
@@ -36,15 +33,13 @@ nav {
     display: flex;
 
     justify-content: flex-end;
-    border: solid;
-    border-color: antiquewhite;
+    
 
 }
 
 /* to position the logo in header */
 #slogo {
-    border: solid;
-    border-color: brown;
+    
     width: 50%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -59,7 +54,7 @@ nav {
 
 nav ul {
     display: flex;
-    border: solid;
+   
     justify-content: flex-end;
     width: 50%;
 }
@@ -69,7 +64,7 @@ nav ul li {
     display: flex;
     padding-top: 1em;
     padding-right: 3em;
-    border: solid;
+    
 
 }
 
@@ -93,7 +88,7 @@ nav ul li a {
 /* We Are Awesome Creative Agency */
 section h2 {
 
-    border-color: beige;
+    
     grid-column: 3/span 2;
     grid-row-start: 2;
     margin-right: 10em;
