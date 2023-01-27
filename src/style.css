@@ -14,31 +14,43 @@
     margin: 0;
 }
 
+h1 {}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.2vw;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2vw;
+}
+
 /* header here */
 header {
     background-image: url(./design-assets/bgk-header.png);
     height: 40vw;
     width: 100%;
     min-height: fit-content;
-    
-    border-color: brown; 
+
+    border-color: brown;
     background-repeat: no-repeat;
-    margin:0 auto;
+    margin: 0 auto;
     background-size: cover;
-    
+
 }
 
 nav {
     display: flex;
 
     justify-content: flex-end;
-    
+
 
 }
 
 /* to position the logo in header */
 #slogo {
-    
+
     width: 50%;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
@@ -53,7 +65,7 @@ nav {
 
 nav ul {
     display: flex;
-   
+
     justify-content: flex-end;
     width: 50%;
 }
@@ -63,7 +75,7 @@ nav ul li {
     display: flex;
     padding-top: 1em;
     padding-right: 3em;
-    
+
 
 }
 
@@ -81,21 +93,20 @@ nav ul li a {
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 20% 20% 20% 20% 20%;
     height: 30em;
-    
+
 }
 
 /* We Are Awesome Creative Agency */
-section h2 {
-
-    
+#hero h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
     grid-column: 3/span 2;
     grid-row-start: 2;
     margin-right: 10em;
-    border: solid;
     height: fit-content;
     min-width: 15em;
     margin-top: 1.5em;
-    
+
 
 }
 
@@ -112,18 +123,18 @@ section h2 {
     border-right: none;
     width: 2.5em;
     margin-left: 10em;
-    
+
 }
 
 /* text in hero */
-section p {
-
+#hero p {
+    color: white;
     grid-column: 2 /span 3;
     grid-row-start: 3;
     margin-left: 5em;
     text-align: center;
     min-width: 30em;
-    
+
 }
 
 #learnmore {
@@ -150,7 +161,7 @@ section p {
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+}
 
 #story-text {
     max-width: 55%;
@@ -167,8 +178,11 @@ section p {
 }
 
 #story-text p {
+    font-family: sans-serif;
+    font-size: 0.7vw;
     padding: 1em;
     padding-right: 40%;
+    line-height: 160%;
 }
 
 #story-text button {
@@ -232,6 +246,7 @@ section p {
     justify-content: center;
     align-items: center;
 }
+
 .expertise {
     background-color: white;
     display: flex;
@@ -277,7 +292,7 @@ section p {
     height: 30vh;
     width: 100%;
     background-color: white;
-    
+
 }
 
 .expertise-icon {
