@@ -10,6 +10,122 @@
 }
 
 
-*{  font-family: "Roboto";
+* {
+    font-family: "Roboto";
     margin: 0;
-    } 
+}
+
+/* header here */
+header {
+    background-image: url(./design-assets/bgk-header.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 50em;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+
+    justify-content: flex-end;
+    border: solid;
+    border-color: antiquewhite;
+
+}
+
+/* to position the logo in header */
+#slogo {
+    border: solid;
+    border-color: brown;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+}
+
+#slogo img {
+    justify-content: center;
+    grid-column-start: 3;
+}
+
+/* logo position ends here */
+
+nav ul {
+    display: flex;
+    border: solid;
+    justify-content: flex-end;
+    width: 50%;
+}
+
+nav ul li {
+    list-style: none;
+    display: flex;
+    padding-top: 1em;
+    padding-right: 3em;
+    border: solid;
+
+}
+
+nav ul li a {
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 0.7em;
+
+}
+
+/* hero section in header */
+#hero {
+    display: grid;
+    
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    height: 30em;
+}
+
+section h2 {
+    
+    border-color: beige;
+    grid-column:3/span 2;
+    grid-row-start: 2;
+    margin-right: 5em;
+    border: solid;
+    height: fit-content;
+    margin-top: 1.5em;
+}
+#line{
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(0, 200, 200);
+    grid-column-start:3;
+    grid-row-start: 2;
+    margin-bottom: 1em;
+    border-top:none;
+    border-left:none;
+    border-right:none; 
+    width: 2.5em;
+    margin-left:10.5em;
+}
+
+section p{
+    
+    grid-column: 2 /span 3;
+    grid-row-start:3;
+    margin-left: 7em;
+    text-align: center;
+}
+
+#learnmore{
+    border: solid;
+    grid-column-start:3;
+    grid-row-start: 4;
+    width: 8em;
+    height: 2em;
+    font-size: 0.5em;
+    margin-left: 17em;
+    text-align: center;
+    padding-top: 5px;
+    border-color: rgb(0, 189, 189);
+    border-width: 1px;
+    color:rgb(0, 170, 170);
+    
+    
+}
