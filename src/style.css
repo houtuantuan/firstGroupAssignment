@@ -1,14 +1,13 @@
 @font-face {
     font-family: "Roboto";
-    src: url("./src/Roboto/Roboto-Black.ttf") format("truetype"),
-        url("./src/Roboto/Roboto-Black.woff") format("woff"),
-        url("./src/Roboto/Roboto-Black.woff2") format("woff2"),
-        url("./src/Roboto/Roboto-Black.eot") format("eot"),
-        url("./src/Roboto/Roboto-Black.svg") format("svg");
+    src: url("../src/Roboto/Roboto-Black.ttf") format("truetype"),
+        url("../src/Roboto/Roboto-Black.woff") format("woff"),
+        url("../src/Roboto/Roboto-Black.woff2") format("woff2"),
+        url("../src/Roboto/Roboto-Black.eot") format("eot"),
+        url("../src/Roboto/Roboto-Black.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
-
 
 * {
     font-family: "Roboto";
@@ -24,7 +23,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    }
 
 #story-text {
     max-width: 55%;
@@ -80,7 +79,6 @@
 
 }
 
-
 #story-watch div {
     width: 12%;
     height: auto;
@@ -99,4 +97,82 @@
     padding: 1em;
     height: auto;
     width: 50%;
+}
+
+#expertise {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.expertise {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.expertise h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.2vw;
+    color: black;
+}
+
+.expertise p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2vw;
+    color: black;
+    padding: 3%;
+    width: 100%;
+}
+
+.expertise #line {
+    background-color: rgb(232, 232, 232);
+    border-color: rgb(232, 232, 232);
+    width: 5vw;
+    height: 2px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 65%;
+    grid-gap: 1px;
+    background-color: rgb(232, 232, 232);
+    margin-top: 5vh;
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+    background-color: white;
+    
+}
+
+.expertise-icon {
+    height: 25px;
+}
+
+.expertise-link {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 1vw;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10%;
+}
+
+.expertise-text {
+    font-family: sans-serif;
+    font-size: 0.7vw;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2%;
+    line-height: 160%;
 }
