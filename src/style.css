@@ -1,29 +1,45 @@
 @font-face {
-    font-family: "Roboto";
-    src: url("../src/Roboto/Roboto-Black.ttf") format("truetype"),
-        url("../src/Roboto/Roboto-Black.woff") format("woff"),
-        url("../src/Roboto/Roboto-Black.woff2") format("woff2"),
-        url("../src/Roboto/Roboto-Black.eot") format("eot"),
-        url("../src/Roboto/Roboto-Black.svg") format("svg");
+    font-family: "Roboto-Thin";
+    src: url("../src/Roboto/Roboto-Thin.ttf") format("truetype"),
+        url("../src/Roboto/Roboto-Thin.woff") format("woff"),
+        url("../src/Roboto/Roboto-Thin.woff2") format("woff2"),
+        url("../src/Roboto/Roboto-Thin.eot") format("eot"),
+        url("../src/Roboto/Roboto-Thin.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
 
+:root{
+    --logo_color:  rgb(2, 131, 131);
+}
+
 * {
-    font-family: "Roboto";
+    font-family: "Roboto-Thin";
     margin: 0;
 }
 
-h1 {}
+nav li a  {
+    list-style: none;
+}
+
+h1 {font-family: 'Times New Roman', Times, serif;}
 
 h2 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 2.2vw;
 }
 
-p {
+.subtitle-text {
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.2vw;
+    padding: 3%;
+    width: 100%;
+}
+
+.tajam-logo-name{
+    color:  var(--logo_color);
+    font-size: 2.7vw;
+
 }
 
 /* header here */
@@ -42,7 +58,6 @@ header {
 
 nav {
     display: flex;
-
     justify-content: flex-end;
 
 
@@ -258,14 +273,11 @@ nav ul li a {
     font-family: 'Times New Roman', Times, serif;
     font-size: 2.2vw;
     color: black;
+    padding-top: 10%;
 }
 
 .expertise p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2vw;
     color: black;
-    padding: 3%;
-    width: 100%;
 }
 
 .expertise #line {
@@ -273,6 +285,7 @@ nav ul li a {
     border-color: rgb(232, 232, 232);
     width: 5vw;
     height: 2px;
+    margin-left: 0;
 }
 
 .grid-container {
@@ -296,7 +309,7 @@ nav ul li a {
 }
 
 .expertise-icon {
-    height: 25px;
+    height: 20%;
 }
 
 .expertise-link {
@@ -311,7 +324,6 @@ nav ul li a {
 }
 
 .expertise-text {
-    font-family: sans-serif;
     font-size: 0.7vw;
     text-align: center;
     text-transform: uppercase;
@@ -319,3 +331,246 @@ nav ul li a {
     line-height: 160%;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-image: url(../src/design-assets/bgk-footer.png);
+    background-repeat: no-repeat;
+    color: white;
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p{
+    font-family: Roboto-Thin;
+}
+#footer_container{
+width: 100%;
+display: flex;
+justify-content: center;
+}
+
+.footer_tiles{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+    height: 30vh;
+    grid-gap: 1px;
+    padding-top: 5%;
+    gap: 2%;
+}
+
+.footer-tiles-item{
+    max-width: 95%;
+    padding: 0%; 
+    font-family: sans-serif; 
+    display: flex;
+    flex-direction: column;
+    line-height: 160%;
+}
+
+#footer-tajam-logo{
+height: auto;
+width: 20%;
+}
+
+footer .tajam-logo-name{
+    position: relative;
+    left: 30%;
+    top: -60%;
+}
+
+.footer-tiles-item h3{
+    padding-bottom: 15%;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+ 
+.footer-text{
+    font-size: 1vw;
+}
+
+#footer_tiles_center .footer-text{
+    text-indent: -7%;
+}
+.footer-tiles-item input{
+    width: 15vw;
+    height: 5vh;
+    background: none;
+    border-radius: 0;
+    border: solid 1px white;
+    color: white;
+    font-size: 1.1vw;
+    text-align: center;
+}
+
+
+.footer-tiles-item button{
+    width: 9vh;
+    height: 5.5vh;
+    border-radius: 0;
+    border:none;
+    opacity: 0.5;
+    position: relative;
+    top: 9%;
+    left: 2%;
+}
+
+.footer_logos {
+    padding: 7% 2%;
+    width: 100%;
+}
+.footer_logos img{
+    padding: 1%;
+    height: 2vw;
+}
+
+#footer_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    padding-bottom: 3%;
+}
+
+footer nav {
+    list-style: none;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer nav a {
+    font-weight: lighter;
+    padding: 5%;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2vw;
+}
+
