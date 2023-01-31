@@ -353,7 +353,7 @@ header #line {
     grid-template-columns: 1fr 1fr 1fr;
     width: 65%;
     grid-gap: 1px;
-    background-color: var(--font-color-light);
+    background-color: white;
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
@@ -365,7 +365,7 @@ header #line {
     align-items: center;
     height: 30vh;
     width: 100%;
-    background-color: var(--font-color-light);
+    background-color: white;
 }
 
 .expertise-icon {
