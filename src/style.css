@@ -5,7 +5,7 @@
         url("../src/Roboto/Roboto-Thin.woff2") format("woff2"),
         url("../src/Roboto/Roboto-Thin.eot") format("eot"),
         url("../src/Roboto/Roboto-Thin.svg") format("svg");
-            font-weight: normal;
+    font-weight: normal;
     font-style: normal;
 }
 
@@ -31,28 +31,32 @@
     font-style: normal;
 }
 
-:root{
-    --logo_color:  rgb(0, 224, 208);
+:root {
+    --logo_color: rgb(0, 224, 208);
+    --font-color-light: aliceblue;
+    --font-color-dark: rgb(12, 12, 38);
 }
 
-* { font-family: "Roboto-Regular";
+* {
+    font-family: "Roboto-Regular";
     margin: 0;
 }
 
-h1 {font-family: 'Playfair Display', Times, serif;
-    font-size: 2.5w;
+h1 {
+    font-family: 'Playfair Display', Times, serif;
+    font-size: 2.5vw;
 }
 
 h2 {
     font-family: 'Playfair Display', Times, serif;
-    font-size: 2.2vw;
+    font-size: 2vw;
 }
 
-h3{
+h3 {
     font-family: "Roboto-Regular";
 }
 
-p{
+p {
     font-family: "Roboto-Thin";
     font-size: 0.8vw;
     line-height: 160%;
@@ -65,37 +69,39 @@ p{
     width: 100%;
 }
 
-nav ul li  {
+nav ul li {
     list-style: none;
     text-decoration: none;
 }
+
 /*logo*/
-.tajam-logo{
+.tajam-logo {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 10vw;
 }
 
-.tajam-logo-img{
+.tajam-logo-img {
     height: auto;
     position: relative;
     top: 10%;
     width: 5vh;
 }
 
-.tajam-logo-name{
+.tajam-logo-name {
     font-family: "Roboto-Thin";
-    color:  var(--logo_color);
+    color: var(--logo_color);
     font-size: 2.5vw;
 }
 
 /*header*/
 /* to position the logo in header */
-header .tajam-logo {    
+header .tajam-logo {
     margin-top: 1%;
 }
 
 /* company name behind logo */
-header .tajam-logo-name{
+header .tajam-logo-name {
     margin-top: 0%;
     margin-left: 0;
     grid-column-start: 4;
@@ -112,8 +118,8 @@ header {
     background-size: cover;
     display: flex;
     flex-direction: column;
-    width: 70;
     align-items: center;
+    width: 70;
 }
 
 header nav {
@@ -125,26 +131,24 @@ header nav {
 
 header nav ul {
     margin-top: 1vh;
-    display: flex;  
-    justify-content: flex-end;
+    display: flex;
     width: 60%;
 }
 
 header nav ul li {
     padding-top: 1em;
     padding-right: 1em;
-   
+
 }
 
 #home a {
     color: var(--logo_color);
 }
-   
+
 nav ul li a {
-    color: white;
+    color: var(--font-color-light);
     font-size: 1.5vh;
     text-decoration: none;
-
 }
 
 /* hero section in header */
@@ -171,9 +175,7 @@ nav ul li a {
 } */
 
 #hero h1 {
-    color: white;
-    /* grid-column: 2;
-    grid-row-start: 2; */
+    color: var(--font-color-light);
     height: fit-content;
     min-width: 15em;
     height: 3em;
@@ -187,14 +189,15 @@ nav ul li a {
 #hero p {
     width: 60%;
     line-height: 180%;
-    color: white;
+    color: var(--font-color-light);
     text-align: center;
 }
 
 header #line {
     border: solid;
     border-width: 1px;
-    border-color: var(--logo_color);;
+    border-color: var(--logo_color);
+    ;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -265,7 +268,7 @@ header #line {
 #story-text button {
     margin: 1em;
     padding: 1em;
-    background-color: white;
+    background-color: var(--font-color-light);
     /*TODO farbe optimieren*/
     border: 0.2em solid rgb(0, 255, 220);
     border-radius: 3px;
@@ -294,7 +297,6 @@ header #line {
     align-items: center;
     justify-content: center;
     height: 58%;
-
 }
 
 #story-watch div {
@@ -305,10 +307,8 @@ header #line {
     align-items: center;
 }
 
-#story-watch div p {
-    font-size: 1.5em;
-    color: white;
-    padding: 1em;
+#story-watch h3 {
+    color: var(--font-color-light);
 }
 
 #story-watch div img {
@@ -325,26 +325,24 @@ header #line {
 }
 
 .expertise {
-    background-color: white;
+    background-color: var(--font-color-light);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .expertise h2 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2.2vw;
-    color: black;
+    color: var(--font-color-dark);
     padding-top: 10%;
 }
 
 .expertise p {
-    color: black;
+    color: var(--font-color-dark);
 }
 
 .expertise #line {
-    background-color: rgb(232, 232, 232);
-    border-color: rgb(232, 232, 232);
+    background-color: var(--font-color-light);
+    border-color: var(--font-color-light);
     width: 5vw;
     height: 2px;
     margin-left: 0;
@@ -355,7 +353,7 @@ header #line {
     grid-template-columns: 1fr 1fr 1fr;
     width: 65%;
     grid-gap: 1px;
-    background-color: rgb(232, 232, 232);
+    background-color: var(--font-color-light);
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
@@ -367,8 +365,7 @@ header #line {
     align-items: center;
     height: 30vh;
     width: 100%;
-    background-color: white;
-
+    background-color: var(--font-color-light);
 }
 
 .expertise-icon {
@@ -378,7 +375,7 @@ header #line {
 .expertise-link {
     text-decoration: none;
     font-family: sans-serif;
-    color: black;
+    color: var(--font-color-dark);
     font-weight: bold;
     font-size: 1vw;
     text-align: center;
@@ -394,7 +391,6 @@ header #line {
     line-height: 160%;
 
 }
-
 
 
 /* Our team */
@@ -413,27 +409,15 @@ header #line {
 
 /* 1st container  in our team*/
 #ourteam_text {
-
-    color: aliceblue;
+    color: var(--font-color-light);
     grid-column: 3/span 2;
     grid-row-start: 2;
     text-align: center;
     height: 50%;
-    font-size: 100%;
     width: 96%;
 }
 
 /* meet our amazing team */
-#ourteam_text h3 {
-    font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 1%;
-    font-size: 3.5vh;
-}
-
-/* ramdon text */
-#ourteam_text p {
-    font-size: 2vh;
-}
 
 #teammember1 {
     grid-column: 2;
@@ -464,8 +448,8 @@ header #line {
 }
 
 .profile {
-    background-color: aliceblue;
-    border: solid white;
+    background-color: var(--font-color-light);
+    border: solid var(--font-color-light);
     height: 100%;
     width: 100%;
     margin: 0;
@@ -475,8 +459,8 @@ header #line {
     font-family: sans-serif;
     font-weight: lighter;
     text-transform: uppercase;
-    color: aliceblue;
-    border: solid white;
+    color: var(--font-color-light);
+    border: solid var(--font-color-light);
     margin: 0;
     width: 100%;
     padding-top: 8%;
@@ -488,7 +472,6 @@ header #line {
 .hiring {
     grid-column: 3/span2;
     grid-row: 5;
-    /* border: solid red; */
     width: 46%;
     display: flex;
     flex-direction: column;
@@ -500,19 +483,20 @@ header #line {
 .hiring p {
     font-size: 2vh;
     font-family: sans-serif;
-    color: aliceblue;
+    color: var(--font-color-light);
     text-align: center;
 }
 
 #hiring {
-    border: solid var(--logo_color);;
+    border: solid var(--logo_color);
+    color: var(--logo_color);
     border-radius: 3%;
-    color: var(--logo_color);;
     padding: 2%;
     font-size: 2.5vh;
     margin-top: 6%;
 }
-#contact {
+
+#contact-form {
     display: flex;
     height: 43vw;
 }
@@ -526,9 +510,6 @@ header #line {
     padding-left: 40%;
     padding-top: 16%;
     padding-bottom: 2.5%;
-    /* TODO font-family einbinden Playfair Display bold */
-    font-family: 'Playfair Display', serif;
-    font-size: 1.375rem;
 }
 
 #contact-formular {
@@ -551,7 +532,7 @@ header #line {
     color: var(--logo_color);
     border: 1px solid var(--logo_color);
     border-radius: 2px;
-    background-color: white;
+    background-color: var(--font-color-light);
 }
 
 #client-container {
@@ -560,8 +541,6 @@ header #line {
 }
 
 #client-container h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.375rem;
     padding-left: 10%;
     padding-top: 16%;
     padding-bottom: 2.5%;
@@ -593,10 +572,10 @@ header #line {
 }
 
 /*footer*/
-footer{
+footer {
     background-image: url(../src/design-assets/bgk-footer.png);
     background-repeat: no-repeat;
-    color: white;
+    color: var(--font-color-light);
     background-position: bottom;
     background-size: cover;
     display: flex;
@@ -604,17 +583,13 @@ footer{
     align-items: center;
 }
 
-footer p{
-    font-family: "Roboto-Thin";
+#footer_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
-#footer_container{
-width: 100%;
-display: flex;
-justify-content: center;
-}
-
-.footer_tiles{
+.footer_tiles {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 70%;
@@ -624,28 +599,22 @@ justify-content: center;
     gap: 2%;
 }
 
-.footer-tiles-item{
+.footer-tiles-item {
     max-width: 95%;
-    padding: 0%; 
-    font-family: "Roboto"; 
+    padding: 0%;
+    font-family: "Roboto";
     display: flex;
     flex-direction: column;
     line-height: 160%;
 }
 
-/* 
-#footer-tajam-logo{
-height: auto;
-width: 15%;
+footer .tajam-logo{
+margin-bottom: 5%;
+position: relative;
+top: -8%;
 }
 
-footer .tajam-logo-name{
-    position: relative;
-    left: 30%;
-    top: -60%;
-} */
-
-.footer-tiles-item h3{
+.footer-tiles-item h3 {
     padding-bottom: 15%;
     text-transform: uppercase;
     text-align: left;
@@ -653,31 +622,31 @@ footer .tajam-logo-name{
     font-size: 1.5vw;
 }
 
- 
-.footer-text{
+
+.footer-text {
     font-size: 1vw;
 }
 
-#footer_tiles_center .footer-text{
+#footer_tiles_center .footer-text {
     text-indent: -7%;
 }
 
-.footer-tiles-item input{
+.footer-tiles-item input {
     width: 15vw;
     height: 5vh;
     background: none;
     border-radius: 0;
-    border: solid 1px white;
-    color: white;
+    border: solid 1px var(--font-color-light);
+    color: var(--font-color-light);
     font-size: 1.1vw;
     text-align: center;
 }
 
-.footer-tiles-item button{
+.footer-tiles-item button {
     width: 9vh;
     height: 5.5vh;
     border-radius: 0;
-    border:none;
+    border: none;
     opacity: 0.5;
     position: relative;
     top: 9%;
@@ -689,12 +658,12 @@ footer .tajam-logo-name{
     width: 100%;
 }
 
-.footer_logos img{
+.footer_logos img {
     padding: 1%;
     height: 2vw;
 }
 
-#footer_bar{
+#footer_bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -711,10 +680,10 @@ footer nav {
 }
 
 footer nav a {
-    font-weight: "Roboto-Thin";
+    /* font-family: "Roboto-Thin"; */
     padding: 5%;
     text-transform: uppercase;
-    color: white;
+    color: var(--font-color-light);
     text-decoration: none;
     font-size: 1.2vw;
 }
