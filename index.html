@@ -13,26 +13,31 @@
     <header>
         <nav>
             <div id="slogo"><img src="./src/design-assets/png/logo.png" alt="logo">
+                <p id="cname">tajam</p>
             </div>
             <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">AOUTE</a></li>
-                <li><a href="#expertise">EXPERTISE</a></li>
-                <li><a href="#teams">TEAMS</a></li>
-                <li><a href="works">WORKS</a></li>
-                <li><a href="#peoplesay">PEOPLE SAY</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li id="home"><a href="#home">HOME</a></li>
+                <li id="about"><a href="#about">AOUTE</a></li>
+                <li id="navexpertise"><a href="#expertise">EXPERTISE</a></li>
+                <li id="teams"><a href="#teams">TEAMS</a></li>
+                <li id="works"><a href="works">WORKS</a></li>
+                <li id="peoplesay"><a href="#peoplesay">PEOPLE SAY</a></li>
+                <li id="contact"><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
         <section id="hero">
-            <h2>We Are Awesome Creative Agency</h2>
-            <div id="line"> </div>
+            <div id="flex_line">
+                <h2>We Are Awesome Creative Agency
+                    <div id="line"> </div>
+                </h2>
+            </div>
             <p>This is Photoshop's version of Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat, nihil
                 optio et reprehenderit ipsum est adipisci reiciendis commodi qui? Illo libero unde dolorum fuga.
                 Repellendus, assumenda quidem? Eligendi, accusamus facilis.
             </p>
-            <div id="learnmore">LEARN MORE</div>
-
+            <div id="flex-display">
+                <div id="learnmore">LEARN MORE</div>
+            </div>
         </section>
     </header>
 
@@ -69,7 +74,6 @@
                 </div>
             </div>
         </section>
-
         <!--Expertise-->
         <section id="expertise">
             <div class="expertise">
@@ -127,9 +131,87 @@
         </section>
 
 
-        <section>Meet our amazing team</section>
+        <section id="ourteam">
 
-        <section>Give us a good news</section>
+            <div id="ourteam_text">
+                <h3>MEET OUR AMAZING TEAM</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    <br>
+                    <center><hr width="12%" color="#676aa9"></center> 
+            </div>
+            <div id="teammember1">
+                <div class="profile"></div>
+                <div class="info"><strong>senf ucuk</strong> <br> ceo & founder</div>
+            </div>
+            <div id="teammember2">
+                <div class="profile"></div>
+                <div class="info"><strong>dik adalin</strong> <br> engineering</div>
+            </div>
+            <div id="teammember3">
+                <div class="profile"></div>
+                <div class="info"><strong>jeng kol</strong><br> designer</div>
+            </div>
+            <div id="teammember4">
+                <div class="profile"></div>
+                <div class="info"><strong>pet romak</strong><br> marketing</div>
+            </div>
+            <div class="hiring">
+                <p>Become part of our dream team, let's join us!</p>
+
+                <div id="hiring">WE ARE HIRING</div>
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <div id="contact-container">
+                <h2>Give us a good news</h2>
+                <form id="contact-formular" action="">
+                    <input class="contact-input" type="text" placeholder="Name"></input>
+                    <input class="contact-input" type="email" placeholder="Email"></input>
+                    <input class="contact-input" type="text" placeholder="Subject"></input>
+                    <textarea name="" class="contact-input" id="message" cols="30" rows="10"
+                        placeholder="Your Message"></textarea>
+                    <button id="submit-button" class="contact-input">SUBMIT</button>
+                </form>
+            </div>
+            <div id="client-container">
+                <h2>OUR HAPPY CLIENT</h2>
+                <div id="client-grid-container">
+                    <a class="client-grid-item" href="">
+                        <img src="./src/design-assets/png/Zara_Logo.png" alt="Zara Logo">
+                    </a>
+                    <a class="client-grid-item" href="">
+                        <img src="./src/design-assets/png/Logo_of_Mango_(new).png" alt="Mango Logo">
+                    </a>
+                    <a class="client-grid-item" href="">
+                        <img src="./src/design-assets/png/1280px-Barneys_New_York_Logo.png" alt="Barneys NewYork Logo">
+                    </a>
+                    <a class="client-grid-item" href="">
+                        <img src="./src/design-assets/png/1280px-Gucci_Logo.png" alt="Gucci Logo">
+                    </a>
+                    <a class="client-grid-item" href="">
+                        <img src="./src/design-assets/png/Calvin_klein_logo.png" alt="Calvin Klein Logo">
+                    </a>
+                    <a class="client-grid-item" href="">
+                        <img src="./src/design-assets/png/1280px-Logo_NIKE.png" alt="Nike Logo">
+                    </a>
+                    <a class="client-grid-item" href="">
+                        <img src="./src/design-assets/png/Converse_logo.png" alt="Converse Logo">
+                    </a>
+                    <a class="client-grid-item" href="">
+                        <img src="./src/design-assets/png/Puma_Logo.png" alt="Puma Logo">
+                    </a>
+                    <a class="client-grid-item" href="">
+                        <img src="./src/design-assets/png/1280px-Levi's_logo.png" alt="Levi´s Logo">
+                    </a>
+                    <a class="client-grid-item" href="">
+                        <img src="./src/design-assets/png/Billabong.png" alt="Billa Bong Logo">
+                    </a>
+                </div>
+            </div>
+        </section>
+
 
     </main>
 
