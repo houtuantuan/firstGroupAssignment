@@ -69,7 +69,7 @@ h2 {
 
 h3 {
     font-family: "Roboto-Regular";
-    font-size: 4rem;
+    font-size: 1.5vw;
 }
 
 p {
@@ -588,7 +588,6 @@ footer .tajam-logo {
     text-transform: uppercase;
     text-align: left;
     font-weight: bold;
-    font-size: 1.5vw;
 }
 
 .footer-text {
