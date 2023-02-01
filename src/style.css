@@ -24,9 +24,20 @@
     font-family: "Playfair Display";
     src: url("../src/Playfair_Display/PlayfairDisplay-Regular.ttf") format("truetype"),
         url("../src/Playfair_Display/PlayfairDisplay-Regular.woff") format("woff"),
-        url("../src/Playfair_Display/PlayfairDisplay-Regularwoff2") format("woff2"),
+        url("../src/Playfair_Display/PlayfairDisplay-Regular.woff2") format("woff2"),
         url("../src/Playfair_Display/PlayfairDisplay-Regular.eot") format("eot"),
         url("../src/Playfair_Display/PlayfairDisplay-Regular.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Hammersmith One";
+    src: url("../src/Hammersmith_One/HammersmithOne-Regular.ttf") format("truetype"),
+        url("../src/Hammersmith_One/HammersmithOne-Regular.woff") format("woff"),
+        url("../src/Hammersmith_One/HammersmithOne-Regular.woff2") format("woff2"),
+        url("../src/Hammersmith_One/HammersmithOne-Regular.eot") format("eot"),
+        url("../src/Hammersmith_One/HammersmithOne-Regular.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -35,6 +46,8 @@
     --logo_color: rgb(0, 224, 208);
     --font-color-light: aliceblue;
     --font-color-dark: rgb(12, 12, 38);
+    --font-color-white: white;
+    --font-color-grey: lightgrey;
 }
 
 * {
@@ -63,7 +76,7 @@ p {
 }
 
 .subtitle-text {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Playfair Display', Times, serif;
     font-size: 1.2vw;
     padding: 3%;
     width: 100%;
@@ -76,16 +89,17 @@ nav ul li {
 
 /*logo*/
 .tajam-logo {
-    display: grid;
+    display: inline-grid;
     grid-template-columns: 1fr 1fr;
     width: 10vw;
 }
 
 .tajam-logo-img {
+    width: 5vh;
     height: auto;
     position: relative;
-    top: 10%;
-    width: 5vh;
+    top: 18%;
+    left: 10%;
 }
 
 .tajam-logo-name {
@@ -93,6 +107,24 @@ nav ul li {
     color: var(--logo_color);
     font-size: 2.5vw;
 }
+
+/*blue buttons*/
+.button-link{
+    font-family: "Hammersmith One";
+    color: var(--logo_color);
+    background: none;
+    width: 8.5vw;
+    height: 2.2vw;
+    font-size: 1vw;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: solid 3px;
+    border-color: var(--logo_color);
+    border-width: 1px;
+    border-radius: 4%;
+}
+
 
 /*header*/
 /* to position the logo in header */
@@ -132,23 +164,23 @@ header nav {
 header nav ul {
     margin-top: 1vh;
     display: flex;
+    justify-content: flex-end;
     width: 60%;
 }
 
 header nav ul li {
     padding-top: 1em;
     padding-right: 1em;
-
-}
-
-#home a {
-    color: var(--logo_color);
 }
 
 nav ul li a {
     color: var(--font-color-light);
-    font-size: 1.5vh;
+    font-size: 1vw;
     text-decoration: none;
+}
+
+#home a {
+    color: var(--logo_color);
 }
 
 /* hero section in header */
@@ -197,16 +229,14 @@ header #line {
     border: solid;
     border-width: 1px;
     border-color: var(--logo_color);
-    ;
     border-top: none;
     border-left: none;
     border-right: none;
     justify-content: center;
     margin-bottom: 1em;
-    width: 1.5em;
+    width: 5vw;
     height: 1px;
 }
-
 
 
 /* this ID is used to place learn more bottom */
@@ -215,21 +245,6 @@ header #line {
     grid-row-start: 4;
     display: flex;
     justify-content: center;
-}
-
-#learnmore {
-    border-color: var(--logo_color);
-    color: var(--logo_color);
-    background: none;
-    width: 15%;
-    height: 15%;
-    font-size: 1.2vw;
-    text-align: center;
-    margin-top: 5%;
-    border: solid;
-    border-width: 1px;
-    border-radius: 4%;
-    font-family: "Roboto-Regular";
 }
 
 #our-story {
@@ -263,16 +278,6 @@ header #line {
     padding: 1em;
     padding-right: 40%;
     line-height: 160%;
-}
-
-#story-text button {
-    margin: 1em;
-    padding: 1em;
-    background-color: var(--font-color-light);
-    /*TODO farbe optimieren*/
-    border: 0.2em solid rgb(0, 255, 220);
-    border-radius: 3px;
-    color: rgb(0, 255, 220);
 }
 
 #big-logo {
@@ -317,6 +322,7 @@ header #line {
     width: 50%;
 }
 
+/*Expertise*/
 #expertise {
     display: flex;
     flex-direction: column;
@@ -325,7 +331,7 @@ header #line {
 }
 
 .expertise {
-    background-color: var(--font-color-light);
+    background-color: var(--font-color-white);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -341,10 +347,10 @@ header #line {
 }
 
 .expertise #line {
-    background-color: var(--font-color-light);
-    border-color: var(--font-color-light);
+    background-color: var(--font-color-grey);
+    border-color: var(--font-color-grey);
     width: 5vw;
-    height: 2px;
+    height: 3px;
     margin-left: 0;
 }
 
@@ -353,7 +359,7 @@ header #line {
     grid-template-columns: 1fr 1fr 1fr;
     width: 65%;
     grid-gap: 1px;
-    background-color: white;
+    background-color: var(--font-color-white);
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
@@ -365,7 +371,7 @@ header #line {
     align-items: center;
     height: 30vh;
     width: 100%;
-    background-color: white;
+    background-color: var(--font-color-white);
 }
 
 .expertise-icon {
@@ -418,7 +424,6 @@ header #line {
 }
 
 /* meet our amazing team */
-
 #teammember1 {
     grid-column: 2;
     grid-row: 3;
@@ -487,15 +492,6 @@ header #line {
     text-align: center;
 }
 
-#hiring {
-    border: solid var(--logo_color);
-    color: var(--logo_color);
-    border-radius: 3%;
-    padding: 2%;
-    font-size: 2.5vh;
-    margin-top: 6%;
-}
-
 #contact-form {
     display: flex;
     height: 43vw;
@@ -519,7 +515,7 @@ header #line {
 }
 
 .contact-input {
-    /* TODO font-family einbinden Roboto-Light*/
+    font-family: "Roboto-Thin";
     padding: 1em;
     margin-bottom: 1.75em;
 }
