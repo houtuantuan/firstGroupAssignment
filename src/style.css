@@ -63,11 +63,13 @@ h1 {
 
 h2 {
     font-family: 'Playfair Display', Times, serif;
-    font-size: 2vw;
+    font-size: 1.9vw;
+    font-weight: bold;
 }
 
 h3 {
     font-family: "Roboto-Regular";
+    font-size: 4rem;
 }
 
 p {
@@ -91,7 +93,7 @@ nav ul li {
 /*logo*/
 .tajam-logo {
     display: inline-grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 3fr;
     width: 10vw;
 }
 
@@ -99,14 +101,14 @@ nav ul li {
     width: 5vh;
     height: auto;
     position: relative;
-    top: 18%;
-    left: 10%;
+    top: 10%;
 }
 
 .tajam-logo-name {
     font-family: "Roboto-Thin";
     color: var(--logo_color);
     font-size: 2.5vw;
+    text-align: right;
 }
 
 /*blue buttons*/
@@ -115,7 +117,7 @@ nav ul li {
     color: var(--logo_color);
     background: none;
     width: 8.5vw;
-    height: 2.2vw;
+    height: 2.5vw;
     font-size: 1vw;
     text-align: center;
     margin-top: 5%;
@@ -134,12 +136,11 @@ header .tajam-logo {
 }
 
 /* company name behind logo */
-header .tajam-logo-name {
+/* header .tajam-logo-name {
     margin-top: 0%;
     margin-left: 0;
-    grid-column-start: 4;
     width: 5vw;
-}
+} */
 
 header {
     background-image: url(./design-assets/bgk-header.png);
@@ -165,7 +166,7 @@ header nav {
 header nav ul {
     margin-top: 1vh;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     width: 60%;
 }
 
@@ -211,7 +212,7 @@ nav ul li a {
     color: var(--font-color-light);
     height: fit-content;
     min-width: 15em;
-    height: 3em;
+    margin-bottom: 2vh;
     margin-top: 2.5em;
     /* display: flex;
     align-items: center;
@@ -234,7 +235,7 @@ header #line {
     border-left: none;
     border-right: none;
     justify-content: center;
-    margin-bottom: 1em;
+    margin-bottom: 2vh;
     width: 5vw;
     height: 1px;
 }
@@ -359,7 +360,7 @@ header #line {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: var(--content-width);
-    grid-gap: 1px;
+    grid-gap: 2px;
     background-color: var(--font-color-grey);
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -521,16 +522,16 @@ header #line {
     margin-bottom: 1.75em;
 }
 
-#submit-button {
+/* #submit-button {
     /* TODO font-family einbinden Hammersmith One Regular */
-    font-family: 'Hammersmith One', sans-serif;
+    /* font-family: 'Hammersmith One', sans-serif;
     align-self: flex-start;
     padding: 1em 2em;
     color: var(--logo_color);
     border: 1px solid var(--logo_color);
     border-radius: 2px;
     background-color: var(--font-color-light);
-}
+} */
 
 #client-container {
     width: 50%;
@@ -581,7 +582,7 @@ footer {
 }
 
 #footer_container {
-    width: 100%;
+    width: var(--content-width);
     display: flex;
     justify-content: center;
 }
@@ -589,7 +590,7 @@ footer {
 .footer_tiles {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: var(--content-width);
+    width: 100%;
     height: 30vh;
     grid-gap: 1px;
     padding-top: 5%;
@@ -618,7 +619,6 @@ top: -8%;
     font-weight: bold;
     font-size: 1.5vw;
 }
-
 
 .footer-text {
     font-size: 1vw;
