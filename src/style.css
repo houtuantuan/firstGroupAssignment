@@ -92,22 +92,21 @@ nav ul li {
 
 /*logo*/
 .tajam-logo {
-    display: inline-grid;
-    grid-template-columns: 1fr 3fr;
-    width: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5%;
+    width: 10rem;
 }
 
 .tajam-logo-img {
-    width: 5vh;
-    height: auto;
-    position: relative;
-    top: 10%;
+ height: 75%;
 }
 
 .tajam-logo-name {
     font-family: "Roboto-Thin";
     color: var(--logo_color);
-    font-size: 2.5vw;
+    font-size: 2rem;
     text-align: right;
 }
 
