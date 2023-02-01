@@ -48,6 +48,7 @@
     --font-color-dark: rgb(12, 12, 38);
     --font-color-white: white;
     --font-color-grey: lightgrey;
+    --content-width: 70%;
 }
 
 * {
@@ -158,7 +159,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     height: 15%;
-    width: 70%;
+    width: var(--content-width);
 }
 
 header nav ul {
@@ -357,7 +358,7 @@ header #line {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 65%;
+    width: var(--content-width);
     grid-gap: 1px;
     background-color: var(--font-color-grey);
     margin-top: 5vh;
@@ -588,7 +589,7 @@ footer {
 .footer_tiles {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 70%;
+    width: var(--content-width);
     height: 30vh;
     grid-gap: 1px;
     padding-top: 5%;
@@ -649,6 +650,9 @@ top: -8%;
     left: 2%;
 }
 
+.footer-tiles-item button img{
+    height: 3vh;
+}
 .footer_logos {
     padding: 7% 2%;
     width: 100%;
@@ -664,7 +668,7 @@ top: -8%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 70%;
+    width: var(--content-width);
     padding-bottom: 3%;
 }
 
@@ -672,12 +676,12 @@ footer nav {
     list-style: none;
     width: 50%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 footer nav a {
     /* font-family: "Roboto-Thin"; */
-    padding: 5%;
+    padding-right: 5%;
     text-transform: uppercase;
     color: var(--font-color-light);
     text-decoration: none;
