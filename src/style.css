@@ -112,7 +112,7 @@ nav ul li {
 }
 
 /*blue buttons*/
-.button-link{
+.button-link {
     font-family: "Hammersmith One";
     color: var(--logo_color);
     background: none;
@@ -198,7 +198,7 @@ nav ul li a {
     min-width: 15em;
     margin-bottom: 2vh;
     margin-top: 2.5em;
-   }
+}
 
 /* text in hero */
 #hero p {
@@ -577,10 +577,10 @@ footer {
     line-height: 160%;
 }
 
-footer .tajam-logo{
-margin-bottom: 5%;
-position: relative;
-top: -8%;
+footer .tajam-logo {
+    margin-bottom: 5%;
+    position: relative;
+    top: -8%;
 }
 
 .footer-tiles-item h3 {
@@ -596,7 +596,7 @@ top: -8%;
     display: flex;
 }
 
-#footer_tiles_center_info {
+.footer_tiles_center_info {
     display: flex;
     gap: 2ch;
 }
@@ -628,9 +628,10 @@ top: -8%;
     left: 2%;
 }
 
-.footer-tiles-item button img{
+.footer-tiles-item button img {
     height: 3vh;
 }
+
 .footer_logos {
     padding: 7% 2%;
     width: 100%;
