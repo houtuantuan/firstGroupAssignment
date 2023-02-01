@@ -638,34 +638,38 @@ footer nav a {
 #contact-container {
     width: 50%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 #contact-container h2 {
-    padding-left: 40%;
+    width: 60%;
     padding-top: 16%;
     padding-bottom: 2.5%;
     /* TODO font-family einbinden Playfair Display bold */
     font-family: 'Playfair Display', serif;
-    font-size: 1.375rem;
+    font-size: 3.3475%;
 }
 
 #contact-formular {
-    padding-left: 40%;
+    /*     padding-left: 40%; */
     display: flex;
     flex-direction: column;
+    width: 60%;
 }
 
 .contact-input {
     /* TODO font-family einbinden Roboto-Light*/
-    padding: 1em;
-    margin-bottom: 1.75em;
+    padding: 2.5%;
+    margin-bottom: 4.375%;
 }
 
 #submit-button {
     /* TODO font-family einbinden Hammersmith One Regular */
     font-family: 'Hammersmith One', sans-serif;
     align-self: flex-start;
-    padding: 1em 2em;
+    padding: 2.5% 5%;
     color: #00e0d0;
     border: 1px solid #00e0d0;
     border-radius: 2px;
@@ -679,7 +683,7 @@ footer nav a {
 
 #client-container h2 {
     font-family: 'Playfair Display', serif;
-    font-size: 1.375rem;
+    font-size: 3.3475%;
     padding-left: 10%;
     padding-top: 16%;
     padding-bottom: 2.5%;
