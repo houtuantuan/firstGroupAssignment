@@ -10,50 +10,131 @@
 }
 
 @font-face {
-    font-family: "Roboto";
-    src: url("../src/Roboto/Roboto-Black.ttf") format("truetype"),
-        url("../src/Roboto/Roboto-Black.woff") format("woff"),
-        url("../src/Roboto/Roboto-Black.woff2") format("woff2"),
-        url("../src/Roboto/Roboto-Black.eot") format("eot"),
-        url("../src/Roboto/Roboto-Black.svg") format("svg");
+    font-family: "Roboto-Regular";
+    src: url("../src/Roboto/Roboto-Regular.ttf") format("truetype"),
+        url("../src/Roboto/Roboto-Regular.woff") format("woff"),
+        url("../src/Roboto/Roboto-Regular.woff2") format("woff2"),
+        url("../src/Roboto/Roboto-Regular.eot") format("eot"),
+        url("../src/Roboto/Roboto-Regular.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src: url("../src/Playfair_Display/PlayfairDisplay-Regular.ttf") format("truetype"),
+        url("../src/Playfair_Display/PlayfairDisplay-Regular.woff") format("woff"),
+        url("../src/Playfair_Display/PlayfairDisplay-Regular.woff2") format("woff2"),
+        url("../src/Playfair_Display/PlayfairDisplay-Regular.eot") format("eot"),
+        url("../src/Playfair_Display/PlayfairDisplay-Regular.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Hammersmith One";
+    src: url("../src/Hammersmith_One/HammersmithOne-Regular.ttf") format("truetype"),
+        url("../src/Hammersmith_One/HammersmithOne-Regular.woff") format("woff"),
+        url("../src/Hammersmith_One/HammersmithOne-Regular.woff2") format("woff2"),
+        url("../src/Hammersmith_One/HammersmithOne-Regular.eot") format("eot"),
+        url("../src/Hammersmith_One/HammersmithOne-Regular.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
 
 :root {
     --logo_color: rgb(0, 224, 208);
+    --font-color-light: aliceblue;
+    --font-color-dark: rgb(12, 12, 38);
+    --font-color-white: white;
+    --font-color-grey: lightgrey;
+    --content-width: 70%;
 }
 
 * {
-    font-family: "Roboto-Thin";
+    font-family: "Roboto-Regular";
     margin: 0;
 }
 
-
-
 h1 {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Playfair Display', Times, serif;
+    font-size: 2.5vw;
 }
 
 h2 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2.2vw;
+    font-family: 'Playfair Display', Times, serif;
+    font-size: 1.9vw;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: "Roboto-Regular";
+    font-size: 4rem;
+}
+
+p {
+    font-family: "Roboto-Thin";
+    font-size: 0.8vw;
+    line-height: 160%;
 }
 
 .subtitle-text {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.2vw;
+    font-family: 'Playfair Display', Times, serif;
+    font-size: 1.1vw;
     padding: 3%;
     width: 100%;
 }
 
-.tajam-logo-name {
-    color: var(--logo_color);
-    font-size: 2.7vw;
-
+nav ul li {
+    list-style: none;
+    text-decoration: none;
 }
 
-/* header here */
+/*logo*/
+.tajam-logo {
+    display: inline-grid;
+    grid-template-columns: 1fr 3fr;
+    width: 10vw;
+}
+
+.tajam-logo-img {
+    width: 5vh;
+    height: auto;
+    position: relative;
+    top: 10%;
+}
+
+.tajam-logo-name {
+    font-family: "Roboto-Thin";
+    color: var(--logo_color);
+    font-size: 2.5vw;
+    text-align: right;
+}
+
+/*blue buttons*/
+.button-link{
+    font-family: "Hammersmith One";
+    color: var(--logo_color);
+    background: none;
+    width: 8.5vw;
+    height: 2.5vw;
+    font-size: 1vw;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border: solid 3px;
+    border-color: var(--logo_color);
+    border-width: 1px;
+    border-radius: 4%;
+}
+
+
+/*header*/
+/* to position the logo in header */
+header .tajam-logo {
+    margin-top: 1%;
+}
+
 header {
     background-image: url(./design-assets/bgk-header.png);
     height: 40vw;
@@ -62,160 +143,90 @@ header {
     background-repeat: no-repeat;
     margin: 0 auto;
     background-size: cover;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70;
 }
 
-nav {
+header nav {
     display: flex;
     justify-content: space-between;
-    height: 10%;
+    height: 15%;
+    width: var(--content-width);
 }
 
-nav li a {
-    list-style: none;
-}
-
-
-#home a {
-    color: rgb(2, 173, 173)
-}
-
-/* to position the logo in header */
-#slogo {
-
-    margin-top: 1%;
-    width: 90vh;
-    display: grid;
-    grid-template-columns: 30% 10% 10% 20% 30%;
-
-}
-
-
-#slogo img {
-    justify-content: center;
-    grid-column-start: 3;
-    margin-right: 0;
-    width: 5vh;
-}
-
-/* company name behind logo */
-#cname {
-    font-family: sans-serif;
-    margin-top: 0%;
-    font-size: 2.2vw;
-    margin-left: 0;
-    grid-column-start: 4;
-    width: 5vw;
-    color: rgb(2, 186, 186);
-
-
-    /* font family to do */
-}
-
-/* logo position ends here */
-
-nav ul {
+header nav ul {
     margin-top: 1vh;
     display: flex;
-    justify-content: flex-end;
-    width: 100vh;
+    justify-content: space-evenly;
+    width: 60%;
 }
 
-nav ul li {
-
-    list-style: none;
-    display: flex;
+header nav ul li {
     padding-top: 1em;
-    padding-right: 3em;
-
+    padding-right: 1em;
 }
 
 nav ul li a {
-    color: aliceblue;
-    font-weight: bold;
-    font-size: 1.7vh;
+    color: var(--font-color-light);
+    font-size: 1vw;
+    text-decoration: none;
+}
 
+#home a {
+    color: var(--logo_color);
 }
 
 /* hero section in header */
 #hero {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 50% 1fr;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    height: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
 }
 
 /* We Are Awesome Creative Agency */
-#flex_line {
+/* #flex_line {
     grid-column: 2;
     grid-row-start: 2;
+} */
 
-}
-
-#hero h2 {
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    grid-column: 2;
-    grid-row-start: 2;
+#hero h1 {
+    color: var(--font-color-light);
     height: fit-content;
     min-width: 15em;
-    height: 3em;
-    margin-top: 1.5em;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    margin-bottom: 2vh;
+    margin-top: 2.5em;
+   }
+
+/* text in hero */
+#hero p {
+    width: 60%;
+    line-height: 180%;
+    color: var(--font-color-light);
+    text-align: center;
 }
 
-
-
-#line {
+header #line {
     border: solid;
     border-width: 1px;
-    border-color: rgb(0, 200, 200);
+    border-color: var(--logo_color);
     border-top: none;
     border-left: none;
     border-right: none;
     justify-content: center;
-    margin-bottom: 1em;
-    width: 1.5em;
-    height: 10px;
-
+    margin-bottom: 2vh;
+    width: 5vw;
+    height: 1px;
 }
 
-
-/* text in hero */
-#hero p {
-    color: white;
-    grid-column: 2;
-    grid-row: 3;
-    text-align: center;
-    min-width: 30em;
-
-}
-
-/* this ID is used to place learn more buttom */
+/* this ID is used to place learn more bottom */
 #flex-display {
-
     grid-column-start: 2;
     grid-row-start: 4;
     display: flex;
     justify-content: center;
-
-}
-
-#learnmore {
-    border: solid;
-    width: 20%;
-    height: 25%;
-    font-size: 1vw;
-    text-align: center;
-    padding-top: 1%;
-    border-color: rgb(0, 189, 189);
-    border-width: 1px;
-    border-radius: 4%;
-    color: rgb(0, 170, 170);
-    border: solid;
 }
 
 #our-story {
@@ -251,16 +262,6 @@ nav ul li a {
     line-height: 160%;
 }
 
-#story-text button {
-    margin: 1em;
-    padding: 1em;
-    background-color: white;
-    /*TODO farbe optimieren*/
-    border: 0.2em solid rgb(0, 255, 220);
-    border-radius: 3px;
-    color: rgb(0, 255, 220);
-}
-
 #big-logo {
     display: flex;
     justify-content: flex-end;
@@ -283,7 +284,6 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     height: 58%;
-
 }
 
 #story-watch div {
@@ -294,10 +294,8 @@ nav ul li a {
     align-items: center;
 }
 
-#story-watch div p {
-    font-size: 1.5em;
-    color: white;
-    padding: 1em;
+#story-watch h3 {
+    color: var(--font-color-light);
 }
 
 #story-watch div img {
@@ -306,6 +304,7 @@ nav ul li a {
     width: 50%;
 }
 
+/*Expertise*/
 #expertise {
     display: flex;
     flex-direction: column;
@@ -314,38 +313,37 @@ nav ul li a {
 }
 
 .expertise {
-    background-color: white;
+    background-color: var(--font-color-white);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .expertise h2 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2.2vw;
-    color: black;
+    color: var(--font-color-dark);
     padding-top: 10%;
 }
 
 .expertise p {
-    color: black;
+    color: var(--font-color-dark);
 }
 
 .expertise #line {
-    background-color: rgb(232, 232, 232);
-    border-color: rgb(232, 232, 232);
+    background-color: var(--font-color-grey);
+    border-color: var(--font-color-grey);
     width: 5vw;
-    height: 2px;
+    height: 3px;
     margin-left: 0;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 65%;
-    grid-gap: 1px;
-    background-color: rgb(232, 232, 232);
+    width: var(--content-width);
+    grid-gap: 2px;
+    background-color: var(--font-color-grey);
     margin-top: 5vh;
+    margin-bottom: 5vh;
 }
 
 .grid-item {
@@ -355,8 +353,7 @@ nav ul li a {
     align-items: center;
     height: 30vh;
     width: 100%;
-    background-color: white;
-
+    background-color: var(--font-color-white);
 }
 
 .expertise-icon {
@@ -366,7 +363,7 @@ nav ul li a {
 .expertise-link {
     text-decoration: none;
     font-family: sans-serif;
-    color: black;
+    color: var(--font-color-dark);
     font-weight: bold;
     font-size: 1vw;
     text-align: center;
@@ -381,137 +378,6 @@ nav ul li a {
     padding: 2%;
     line-height: 160%;
 
-}
-
-footer {
-    background-image: url(../src/design-assets/bgk-footer.png);
-    background-repeat: no-repeat;
-    color: white;
-    background-position: bottom;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer p {
-    font-family: Roboto-Thin;
-}
-
-#footer_container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.footer_tiles {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 70%;
-    height: 30vh;
-    grid-gap: 1px;
-    padding-top: 5%;
-    gap: 2%;
-}
-
-.footer-tiles-item {
-    max-width: 95%;
-    padding: 0%;
-    font-family: sans-serif;
-    display: flex;
-    flex-direction: column;
-    line-height: 160%;
-}
-
-#footer-tajam-logo {
-    height: auto;
-    width: 20%;
-}
-
-footer .tajam-logo-name {
-    position: relative;
-    left: 30%;
-    top: -60%;
-}
-
-.footer-tiles-item h3 {
-    padding-bottom: 15%;
-    text-transform: uppercase;
-    text-align: left;
-    font-weight: bold;
-    font-size: 1.5vw;
-}
-
-.footer-text {
-    font-size: 1vw;
-    display: flex;
-}
-
-#footer_tiles_center_info {
-    display: flex;
-    gap: 2ch;
-}
-
-.footer-icons {
-    width: auto;
-    height: 1em;
-}
-
-.footer-tiles-item input {
-    width: 15vw;
-    height: 5vh;
-    background: none;
-    border-radius: 0;
-    border: solid 1px white;
-    color: white;
-    font-size: 1.1vw;
-    text-align: center;
-}
-
-.footer-tiles-item button {
-    width: 9vh;
-    height: 5.5vh;
-    border-radius: 0;
-    border: none;
-    opacity: 0.5;
-    position: relative;
-    top: 9%;
-    left: 2%;
-}
-
-.footer_logos {
-    padding: 7% 2%;
-    width: 100%;
-}
-
-.footer_logos img {
-    padding: 1%;
-    height: 2vw;
-}
-
-#footer_bar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 70%;
-    padding-bottom: 3%;
-}
-
-footer nav {
-    list-style: none;
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-}
-
-footer nav a {
-    font-weight: lighter;
-    padding: 5%;
-    text-transform: uppercase;
-    color: white;
-    text-decoration: none;
-    font-size: 1.2vw;
 }
 
 /* Our team */
@@ -530,28 +396,15 @@ footer nav a {
 
 /* 1st container  in our team*/
 #ourteam_text {
-
-    color: aliceblue;
+    color: var(--font-color-light);
     grid-column: 3/span 2;
     grid-row-start: 2;
     text-align: center;
     height: 50%;
-    font-size: 100%;
     width: 96%;
 }
 
 /* meet our amazing team */
-#ourteam_text h3 {
-    font-family: 'Times New Roman', Times, serif;
-    margin-bottom: 1%;
-    font-size: 3.5vh;
-}
-
-/* ramdon text */
-#ourteam_text p {
-    font-size: 2vh;
-}
-
 #teammember1 {
     grid-column: 2;
     grid-row: 3;
@@ -581,8 +434,8 @@ footer nav a {
 }
 
 .profile {
-    background-color: aliceblue;
-    border: solid white;
+    background-color: var(--font-color-white);
+    border: solid var(--font-color-light);
     height: 100%;
     width: 100%;
     margin: 0;
@@ -592,8 +445,8 @@ footer nav a {
     font-family: sans-serif;
     font-weight: lighter;
     text-transform: uppercase;
-    color: aliceblue;
-    border: solid white;
+    color: var(--font-color-light);
+    border: solid var(--font-color-light);
     margin: 0;
     width: 100%;
     padding-top: 8%;
@@ -605,7 +458,6 @@ footer nav a {
 .hiring {
     grid-column: 3/span2;
     grid-row: 5;
-    /* border: solid red; */
     width: 46%;
     display: flex;
     flex-direction: column;
@@ -617,17 +469,8 @@ footer nav a {
 .hiring p {
     font-size: 2vh;
     font-family: sans-serif;
-    color: aliceblue;
+    color: var(--font-color-light);
     text-align: center;
-}
-
-#hiring {
-    border: solid rgb(1, 187, 162);
-    border-radius: 3%;
-    color: rgb(1, 187, 162);
-    padding: 2%;
-    font-size: 2.5vh;
-    margin-top: 6%;
 }
 
 #contact {
@@ -647,33 +490,18 @@ footer nav a {
     width: 60%;
     padding-top: 16%;
     padding-bottom: 2.5%;
-    /* TODO font-family einbinden Playfair Display bold */
-    font-family: 'Playfair Display', serif;
-    font-size: 3.3475%;
 }
 
 #contact-formular {
-    /*     padding-left: 40%; */
     display: flex;
     flex-direction: column;
     width: 60%;
 }
 
 .contact-input {
-    /* TODO font-family einbinden Roboto-Light*/
     padding: 2.5%;
     margin-bottom: 4.375%;
-}
-
-#submit-button {
-    /* TODO font-family einbinden Hammersmith One Regular */
-    font-family: 'Hammersmith One', sans-serif;
-    align-self: flex-start;
-    padding: 2.5% 5%;
-    color: #00e0d0;
-    border: 1px solid #00e0d0;
-    border-radius: 2px;
-    background-color: white;
+    font-family: "Roboto-Thin";
 }
 
 #client-container {
@@ -682,8 +510,6 @@ footer nav a {
 }
 
 #client-container h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: 3.3475%;
     padding-left: 10%;
     padding-top: 16%;
     padding-bottom: 2.5%;
@@ -714,17 +540,128 @@ footer nav a {
     width: 100%;
 }
 
-.client-grid-item-slim {
-    height: 50%;
-    width: 100%;
+/*footer*/
+footer {
+    background-image: url(../src/design-assets/bgk-footer.png);
+    background-repeat: no-repeat;
+    color: var(--font-color-light);
+    background-position: bottom;
+    background-size: cover;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    padding-top: 5%;
 }
 
-.client-grid-item-slim img {
-    height: 100%;
-    width: auto;
+#footer_container {
+    width: var(--content-width);
+    display: flex;
+    justify-content: center;
+}
 
+.footer_tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    height: 30vh;
+    grid-gap: 1px;
+    padding-top: 5%;
+    gap: 2%;
+}
+
+.footer-tiles-item {
+    max-width: 95%;
+    padding: 0%;
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: column;
+    line-height: 160%;
+}
+
+footer .tajam-logo{
+margin-bottom: 5%;
+position: relative;
+top: -8%;
+}
+
+.footer-tiles-item h3 {
+    padding-bottom: 15%;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.5vw;
+}
+
+.footer-text {
+    font-size: 1vw;
+    display: flex;
+}
+
+#footer_tiles_center_info {
+    display: flex;
+    gap: 2ch;
+}
+
+.footer-icons {
+    width: auto;
+    height: 1em;
+}
+
+.footer-tiles-item input {
+    width: 15vw;
+    height: 5vh;
+    background: none;
+    border-radius: 0;
+    border: solid 1px var(--font-color-light);
+    color: var(--font-color-light);
+    font-size: 1.1vw;
+    text-align: center;
+}
+
+.footer-tiles-item button {
+    width: 9vh;
+    height: 5.5vh;
+    border-radius: 0;
+    border: none;
+    opacity: 0.5;
+    position: relative;
+    top: 9%;
+    left: 2%;
+}
+
+.footer-tiles-item button img{
+    height: 3vh;
+}
+.footer_logos {
+    padding: 7% 2%;
+    width: 100%;
+}
+
+.footer_logos img {
+    padding: 1%;
+    height: 2vw;
+}
+
+#footer_bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--content-width);
+    padding-bottom: 3%;
+}
+
+footer nav {
+    list-style: none;
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+footer nav a {
+    /* font-family: "Roboto-Thin"; */
+    padding-right: 5%;
+    text-transform: uppercase;
+    color: var(--font-color-light);
+    text-decoration: none;
+    font-size: 1.2vw;
 }
