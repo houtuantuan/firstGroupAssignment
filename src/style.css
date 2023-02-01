@@ -48,7 +48,7 @@
     --font-color-dark: rgb(12, 12, 38);
     --font-color-white: white;
     --font-color-grey: lightgrey;
-    --content-width: 70%;
+    --content-width: 66%;
 }
 
 * {
@@ -73,8 +73,8 @@ h3 {
 }
 
 p {
-    font-family: "Roboto-Thin";
-    font-size: 0.8vw;
+    font-family: "Roboto-thin";
+    font-size: 0.9vw;
     line-height: 160%;
 }
 
@@ -101,18 +101,19 @@ nav ul li {
     width: 5vh;
     height: auto;
     position: relative;
-    top: 10%;
+    top: 5%;
 }
 
 .tajam-logo-name {
     font-family: "Roboto-Thin";
     color: var(--logo_color);
-    font-size: 2.5vw;
+    font-size: 2vw;
     text-align: right;
+    text-align: center;
 }
 
 /*blue buttons*/
-.button-link{
+.button-link {
     font-family: "Hammersmith One";
     color: var(--logo_color);
     background: none;
@@ -134,13 +135,6 @@ nav ul li {
 header .tajam-logo {
     margin-top: 1%;
 }
-
-/* company name behind logo */
-/* header .tajam-logo-name {
-    margin-top: 0%;
-    margin-left: 0;
-    width: 5vw;
-} */
 
 header {
     background-image: url(./design-assets/bgk-header.png);
@@ -193,30 +187,12 @@ nav ul li a {
     width: 70%;
 }
 
-/* #hero {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 50% 1fr;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    height: 100%;
-} */
-
-
-/* We Are Awesome Creative Agency */
-/* #flex_line {
-    grid-column: 2;
-    grid-row-start: 2;
-} */
-
 #hero h1 {
     color: var(--font-color-light);
     height: fit-content;
     min-width: 15em;
     margin-bottom: 2vh;
     margin-top: 2.5em;
-    /* display: flex;
-    align-items: center;
-    flex-direction: column; */
 }
 
 /* text in hero */
@@ -522,17 +498,6 @@ header #line {
     margin-bottom: 1.75em;
 }
 
-/* #submit-button {
-    /* TODO font-family einbinden Hammersmith One Regular */
-    /* font-family: 'Hammersmith One', sans-serif;
-    align-self: flex-start;
-    padding: 1em 2em;
-    color: var(--logo_color);
-    border: 1px solid var(--logo_color);
-    border-radius: 2px;
-    background-color: var(--font-color-light);
-} */
-
 #client-container {
     width: 50%;
     height: auto;
@@ -575,41 +540,59 @@ footer {
     background-repeat: no-repeat;
     color: var(--font-color-light);
     background-position: bottom;
+    width: 100%;
     background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0;
 }
 
-#footer_container {
-    width: var(--content-width);
+/*Version2: grid*/
+#footer-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    width: var(--content-width);
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
-.footer_tiles {
+.footer-tiles {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    width: 100%;
-    height: 30vh;
-    grid-gap: 1px;
-    padding-top: 5%;
-    gap: 2%;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: row;
+    grid-gap: 5%;
+    height: 20vh;
 }
 
 .footer-tiles-item {
-    max-width: 95%;
-    padding: 0%;
-    font-family: "Roboto";
-    display: flex;
-    flex-direction: column;
-    line-height: 160%;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* grid-template-rows: 3fr; */
+}
+
+.footer-tiles-item > h3{
+    align-self: center;
+}
+
+#footer-tiles-left>p {
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
 footer .tajam-logo{
-margin-bottom: 5%;
-position: relative;
-top: -8%;
+    position: relative;
+    top: -15%;
+}
+
+#footer-tiles-center-text {
+    display: inline-grid;
+    grid-template-columns: 1fr 8fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-flow: column;
+    grid-gap: 5%;
 }
 
 .footer-tiles-item h3 {
@@ -620,12 +603,10 @@ top: -8%;
     font-size: 1.5vw;
 }
 
-.footer-text {
-    font-size: 1vw;
-}
-
-#footer_tiles_center .footer-text {
-    text-indent: -7%;
+footer form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .footer-tiles-item input {
@@ -640,36 +621,40 @@ top: -8%;
 }
 
 .footer-tiles-item button {
-    width: 9vh;
+    width: 4vw;
     height: 5.5vh;
     border-radius: 0;
     border: none;
     opacity: 0.5;
     position: relative;
-    top: 9%;
-    left: 2%;
+    padding: 0;
 }
 
-.footer-tiles-item button img{
+.footer-logos {
+    padding-top: 5%;
+}
+
+.footer-tiles-item button img {
     height: 3vh;
 }
-.footer_logos {
+
+.footer-logos {
     padding: 7% 2%;
     width: 100%;
 }
 
-.footer_logos img {
+.footer-logos img {
     padding: 1%;
     height: 2vw;
 }
 
-#footer_bar {
+#footer-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: var(--content-width);
-    padding-bottom: 3%;
+    padding-top: 8%;
+    padding-bottom: 1%;
 }
 
 footer nav {
