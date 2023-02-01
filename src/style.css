@@ -135,13 +135,6 @@ header .tajam-logo {
     margin-top: 1%;
 }
 
-/* company name behind logo */
-/* header .tajam-logo-name {
-    margin-top: 0%;
-    margin-left: 0;
-    width: 5vw;
-} */
-
 header {
     background-image: url(./design-assets/bgk-header.png);
     height: 40vw;
@@ -193,15 +186,6 @@ nav ul li a {
     width: 70%;
 }
 
-/* #hero {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 50% 1fr;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    height: 100%;
-} */
-
-
 /* We Are Awesome Creative Agency */
 /* #flex_line {
     grid-column: 2;
@@ -214,10 +198,7 @@ nav ul li a {
     min-width: 15em;
     margin-bottom: 2vh;
     margin-top: 2.5em;
-    /* display: flex;
-    align-items: center;
-    flex-direction: column; */
-}
+   }
 
 /* text in hero */
 #hero p {
@@ -239,7 +220,6 @@ header #line {
     width: 5vw;
     height: 1px;
 }
-
 
 /* this ID is used to place learn more bottom */
 #flex-display {
@@ -400,7 +380,6 @@ header #line {
 
 }
 
-
 /* Our team */
 #ourteam {
     background-image: url(./design-assets/bgk-header.png);
@@ -494,7 +473,7 @@ header #line {
     text-align: center;
 }
 
-#contact-form {
+#contact {
     display: flex;
     height: 43vw;
 }
@@ -502,36 +481,28 @@ header #line {
 #contact-container {
     width: 50%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 #contact-container h2 {
-    padding-left: 40%;
+    width: 60%;
     padding-top: 16%;
     padding-bottom: 2.5%;
 }
 
 #contact-formular {
-    padding-left: 40%;
     display: flex;
     flex-direction: column;
+    width: 60%;
 }
 
 .contact-input {
+    padding: 2.5%;
+    margin-bottom: 4.375%;
     font-family: "Roboto-Thin";
-    padding: 1em;
-    margin-bottom: 1.75em;
 }
-
-/* #submit-button {
-    /* TODO font-family einbinden Hammersmith One Regular */
-    /* font-family: 'Hammersmith One', sans-serif;
-    align-self: flex-start;
-    padding: 1em 2em;
-    color: var(--logo_color);
-    border: 1px solid var(--logo_color);
-    border-radius: 2px;
-    background-color: var(--font-color-light);
-} */
 
 #client-container {
     width: 50%;
@@ -622,10 +593,17 @@ top: -8%;
 
 .footer-text {
     font-size: 1vw;
+    display: flex;
 }
 
-#footer_tiles_center .footer-text {
-    text-indent: -7%;
+#footer_tiles_center_info {
+    display: flex;
+    gap: 2ch;
+}
+
+.footer-icons {
+    width: auto;
+    height: 1em;
 }
 
 .footer-tiles-item input {
