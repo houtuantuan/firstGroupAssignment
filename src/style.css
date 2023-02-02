@@ -193,12 +193,6 @@ nav ul li a {
     width: 70%;
 }
 
-/* We Are Awesome Creative Agency */
-/* #flex_line {
-    grid-column: 2;
-    grid-row-start: 2;
-} */
-
 #hero h1 {
     color: var(--font-color-light);
     height: fit-content;
@@ -541,14 +535,18 @@ header #line {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid green;
 }
 
-.client-grid-item img {
-    flex-grow: 1;
-    max-width: 80%;
-    max-height: 80%;
+.client-grid-item .long-img {
+    width: 100%;
+    height: auto;
 }
+
+.client-grid-item .small-img {
+    width: auto;
+    height: 100%;
+}
+
 
 /*footer*/
 footer {
