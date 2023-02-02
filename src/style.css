@@ -680,16 +680,19 @@ footer .tajam-logo {
     font-size: 1.1vw;
     text-align: center;
 }
-
+footer form{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .footer-tiles-item button {
-    width: 9vh;
+    width: 4vw;
     height: 5.5vh;
     border-radius: 0;
     border: none;
     opacity: 0.5;
-    position: relative;
-    top: 9%;
-    left: 2%;
+   padding: 0;
+    
 }
 
 .footer-tiles-item button img {
