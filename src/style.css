@@ -102,7 +102,7 @@ h1 {
 
 h2 {
     font-family: 'Playfair Display Bold', Times, serif;
-    font-size: 1.9vw;
+    font-size: 1.5vw;
 }
 
 h3 {
@@ -572,7 +572,7 @@ header #line {
 }
 
 #client-container h2 {
-    padding-left: 10%;
+    padding-left: 18%;
     padding-top: 16%;
     padding-bottom: 3%;
     width: 100%;
@@ -691,7 +691,7 @@ footer form{
     border-radius: 0;
     border: none;
     opacity: 0.5;
-   padding: 0;
+    padding: 0;
     
 }
 
