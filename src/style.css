@@ -21,12 +21,23 @@
 }
 
 @font-face {
-    font-family: "Playfair Display";
+    font-family: "Playfair Display Regular";
     src: url("../src/Playfair_Display/PlayfairDisplay-Regular.ttf") format("truetype"),
         url("../src/Playfair_Display/PlayfairDisplay-Regular.woff") format("woff"),
         url("../src/Playfair_Display/PlayfairDisplay-Regular.woff2") format("woff2"),
         url("../src/Playfair_Display/PlayfairDisplay-Regular.eot") format("eot"),
         url("../src/Playfair_Display/PlayfairDisplay-Regular.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Playfair Display Bold";
+    src: url("../src/Playfair_Display/PlayfairDisplay-Bold.ttf") format("truetype"),
+        url("../src/Playfair_Display/PlayfairDisplay-Bold.woff") format("woff"),
+        url("../src/Playfair_Display/PlayfairDisplay-Bold.woff2") format("woff2"),
+        url("../src/Playfair_Display/PlayfairDisplay-Bold.eot") format("eot"),
+        url("../src/Playfair_Display/PlayfairDisplay-Bold.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -41,7 +52,26 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: "Roboto-Black";
+    src: url("../src/Roboto/Roboto-Black.ttf") format("truetype"),
+        url("../src/Roboto/Roboto-Black.woff") format("woff"),
+        url("../src/Roboto/Roboto-Black.woff2") format("woff2"),
+        url("../src/Roboto/Roboto-Black.eot") format("eot"),
+        url("../src/Roboto/Roboto-Black.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("../src/Roboto/Roboto-Light.ttf") format("truetype"),
+        url("../src/Roboto/Roboto-Light.woff") format("woff"),
+        url("../src/Roboto/Roboto-Light.woff2") format("woff2"),
+        url("../src/Roboto/Roboto-Light.eot") format("eot"),
+        url("../src/Roboto/Roboto-Light.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
 :root {
     --logo_color: rgb(0, 224, 208);
     --font-color-light: aliceblue;
@@ -62,9 +92,8 @@ h1 {
 }
 
 h2 {
-    font-family: 'Playfair Display', Times, serif;
+    font-family: 'Playfair Display Bold', Times, serif;
     font-size: 1.9vw;
-    font-weight: bold;
 }
 
 h3 {
@@ -88,6 +117,8 @@ p {
 nav ul li {
     list-style: none;
     text-decoration: none;
+    
+    
 }
 
 .content-container {
@@ -99,22 +130,22 @@ nav ul li {
 
 /*logo*/
 .tajam-logo {
-    display: inline-grid;
-    grid-template-columns: 1fr 3fr;
-    width: 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 5%;
+    width: 10rem;
 }
 
 .tajam-logo-img {
-    width: 5vh;
-    height: auto;
-    position: relative;
-    top: 10%;
+ height: 75%;
+
 }
 
 .tajam-logo-name {
     font-family: "Roboto-Thin";
     color: var(--logo_color);
-    font-size: 2.5vw;
+    font-size: 2rem;
     text-align: right;
 }
 
@@ -161,10 +192,11 @@ header nav {
     justify-content: space-between;
     height: 15%;
     width: var(--content-width);
+    
 }
 
 header nav ul {
-    margin-top: 1vh;
+    margin-top: 1%;
     display: flex;
     justify-content: space-evenly;
     width: 60%;
@@ -173,12 +205,17 @@ header nav ul {
 header nav ul li {
     padding-top: 1em;
     padding-right: 1em;
+    display: flex;
+    align-items: center;
 }
 
 nav ul li a {
     color: var(--font-color-light);
     font-size: 1vw;
     text-decoration: none;
+    font-family: "Roboto-Black";
+    font-weight: bold;
+    height: 80%;
 }
 
 #home a {
@@ -223,12 +260,12 @@ header #line {
 }
 
 /* this ID is used to place learn more bottom */
-#flex-display {
+/* #flex-display {
     grid-column-start: 2;
     grid-row-start: 4;
     display: flex;
     justify-content: center;
-}
+} */
 
 #our-story {
     height: 60vw;
@@ -390,8 +427,8 @@ header #line {
     margin: 0 auto;
     background-size: cover;
     display: grid;
-    grid-template-columns: 22% 15% 15% 15% 15% 18%;
-    grid-template-rows: 10% 15% 30% 20% 25%;
+    grid-template-columns: 14% 1fr 1fr 1fr 1fr 14%;
+    grid-template-rows: 9% 17% 36% 15% 23%;
 }
 
 /* 1st container  in our team*/
@@ -400,8 +437,25 @@ header #line {
     grid-column: 3/span 2;
     grid-row-start: 2;
     text-align: center;
-    height: 50%;
-    width: 96%;
+    height: 8vh;
+    width: 97%;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+/* .subtitle-text{
+    border: solid;
+} */
+#ourteam_text h2{
+    margin-bottom: -3%;
+    
+}
+
+#ourteam_text p{
+    width: 94%;
+    height: fit-content;
+    vertical-align: text-top;
 }
 
 /* meet our amazing team */
@@ -409,28 +463,28 @@ header #line {
     grid-column: 2;
     grid-row: 3;
     width: 92%;
-    height: 13vw;
+    height: 14vw;
 }
 
 #teammember2 {
     grid-column: 3;
     grid-row: 3;
     width: 92%;
-    height: 13vw;
+    height: 14vw;
 }
 
 #teammember3 {
     grid-column: 4;
     grid-row: 3;
     width: 92%;
-    height: 13vw;
+    height: 14vw;
 }
 
 #teammember4 {
     grid-column: 5;
     grid-row: 3;
     width: 92%;
-    height: 13vw;
+    height: 14vw;
 }
 
 .profile {
@@ -440,9 +494,9 @@ header #line {
     width: 100%;
     margin: 0;
 }
-
+/* name and title */
 .info {
-    font-family: sans-serif;
+    font-family: "Roboto-Black";
     font-weight: lighter;
     text-transform: uppercase;
     color: var(--font-color-light);
@@ -452,22 +506,23 @@ header #line {
     padding-top: 8%;
     padding-bottom: 8%;
     text-align: center;
-    font-size: 70%;
+    font-size:2vh;
 }
 
 .hiring {
     grid-column: 3/span2;
     grid-row: 5;
-    width: 46%;
+    width: 51%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    
 }
 
 /* Become part of our dream team lets join us */
 .hiring p {
-    font-size: 2vh;
+    font-size: 1.5vh;
     font-family: sans-serif;
     color: var(--font-color-light);
     text-align: center;
