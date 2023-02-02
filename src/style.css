@@ -21,12 +21,23 @@
 }
 
 @font-face {
-    font-family: "Playfair Display";
+    font-family: "Playfair Display Regular";
     src: url("../src/Playfair_Display/PlayfairDisplay-Regular.ttf") format("truetype"),
         url("../src/Playfair_Display/PlayfairDisplay-Regular.woff") format("woff"),
         url("../src/Playfair_Display/PlayfairDisplay-Regular.woff2") format("woff2"),
         url("../src/Playfair_Display/PlayfairDisplay-Regular.eot") format("eot"),
         url("../src/Playfair_Display/PlayfairDisplay-Regular.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Playfair Display Bold";
+    src: url("../src/Playfair_Display/PlayfairDisplay-Bold.ttf") format("truetype"),
+        url("../src/Playfair_Display/PlayfairDisplay-Bold.woff") format("woff"),
+        url("../src/Playfair_Display/PlayfairDisplay-Bold.woff2") format("woff2"),
+        url("../src/Playfair_Display/PlayfairDisplay-Bold.eot") format("eot"),
+        url("../src/Playfair_Display/PlayfairDisplay-Bold.svg") format("svg");
     font-weight: normal;
     font-style: normal;
 }
@@ -81,9 +92,8 @@ h1 {
 }
 
 h2 {
-    font-family: 'Playfair Display', Times, serif;
+    font-family: 'Playfair Display Bold', Times, serif;
     font-size: 1.9vw;
-    font-weight: bold;
 }
 
 h3 {
@@ -122,7 +132,7 @@ nav ul li {
     width: 5vh;
     height: auto;
     position: relative;
-    top: 10%;
+    top: 18%;
 }
 
 .tajam-logo-name {
