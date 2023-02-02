@@ -41,7 +41,16 @@
     font-weight: normal;
     font-style: normal;
 }
-
+@font-face {
+    font-family: "Playfair Display Black";
+    src: url("../src/Playfair_Display/PlayfairDisplay-Black.ttf") format("truetype"),
+        url("../src/Playfair_Display/PlayfairDisplay-Black.woff") format("woff"),
+        url("../src/Playfair_Display/PlayfairDisplay-Black.woff2") format("woff2"),
+        url("../src/Playfair_Display/PlayfairDisplay-Black.eot") format("eot"),
+        url("../src/Playfair_Display/PlayfairDisplay-Black.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+}
 @font-face {
     font-family: "Hammersmith One";
     src: url("../src/Hammersmith_One/HammersmithOne-Regular.ttf") format("truetype"),
@@ -87,7 +96,7 @@
 }
 
 h1 {
-    font-family: 'Playfair Display', Times, serif;
+    font-family: 'Playfair Display Black', Times, serif;
     font-size: 2.5vw;
 }
 
@@ -97,18 +106,18 @@ h2 {
 }
 
 h3 {
-    font-family: "Roboto-Regular";
-    font-size: 1.5vw;
+    font-family: "Roboto-Black";
+    font-size: 1.3vw;
 }
 
 p {
-    font-family: "Roboto-Thin";
+    font-family: "Roboto-Light";
     font-size: 0.8vw;
     line-height: 160%;
 }
 
 .subtitle-text {
-    font-family: 'Playfair Display', Times, serif;
+    font-family: 'Playfair Display Regular', Times, serif;
     font-size: 1.1vw;
     padding: 3%;
     width: 100%;
@@ -138,7 +147,7 @@ nav ul li {
 }
 
 .tajam-logo-img {
- height: 75%;
+height: 75%;
 
 }
 
@@ -259,14 +268,6 @@ header #line {
     height: 1px;
 }
 
-/* this ID is used to place learn more bottom */
-/* #flex-display {
-    grid-column-start: 2;
-    grid-row-start: 4;
-    display: flex;
-    justify-content: center;
-} */
-
 #our-story {
     height: 60vw;
     display: flex;
@@ -324,7 +325,7 @@ header #line {
 }
 
 #story-watch div {
-    width: 12%;
+    width: 15%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -399,7 +400,7 @@ header #line {
 
 .expertise-link {
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: "Roboto Black";
     color: var(--font-color-dark);
     font-weight: bold;
     font-size: 1vw;
@@ -506,7 +507,7 @@ header #line {
     padding-top: 8%;
     padding-bottom: 8%;
     text-align: center;
-    font-size:2vh;
+    font-size:1vw;
 }
 
 .hiring {
@@ -523,7 +524,6 @@ header #line {
 /* Become part of our dream team lets join us */
 .hiring p {
     font-size: 1.5vh;
-    font-family: sans-serif;
     color: var(--font-color-light);
     text-align: center;
 }
@@ -558,8 +558,8 @@ header #line {
 .contact-input {
     padding: 0.7vw;
     margin-bottom: 4.375%;
-    font-family: "Roboto-Thin";
-    font-size: 0.7vw;
+    font-family: "Roboto-Light";
+    font-size: 1vw;
 }
 
 #contact-formular .button-link {
@@ -597,7 +597,7 @@ header #line {
 }
 
 .client-grid-item img {
-    min-width: 45%;
+    min-width: 50%;
     min-height: 60%;
     max-width: 60%;
     max-height: 100%;
@@ -635,7 +635,7 @@ footer {
 .footer-tiles-item {
     max-width: 95%;
     padding: 0%;
-    font-family: "Roboto";
+    
     display: flex;
     flex-direction: column;
     line-height: 160%;
@@ -651,14 +651,15 @@ footer .tajam-logo {
     padding-bottom: 15%;
     text-transform: uppercase;
     text-align: left;
-    font-weight: bold;
 }
 
 .footer-text {
     font-size: 1vw;
     display: flex;
 }
-
+#footer_bar p{
+    font-family: "Roboto-Regular";
+}
 .footer_tiles_center_info {
     display: flex;
     gap: 2ch;
@@ -722,10 +723,10 @@ footer nav {
 }
 
 footer nav a {
-    /* font-family: "Roboto-Thin"; */
     padding-right: 5%;
     text-transform: uppercase;
     color: var(--font-color-light);
     text-decoration: none;
-    font-size: 1.2vw;
+    font-size: 1.1vw;
+    font-family: "Roboto-Regular";
 }
