@@ -541,14 +541,11 @@ header #line {
     align-items: center;
 }
 
-.client-grid-item .long-img {
-    width: 100%;
-    height: auto;
-}
-
-.client-grid-item .small-img {
-    width: auto;
-    height: 100%;
+.client-grid-item img {
+    min-width: 45%;
+    min-height: 60%;
+    max-width: 60%;
+    max-height: 100%;
 }
 
 
