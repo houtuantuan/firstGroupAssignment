@@ -98,7 +98,7 @@ h2 {
 
 h3 {
     font-family: "Roboto-Regular";
-    font-size: 4rem;
+    font-size: 1.5vw;
 }
 
 p {
@@ -119,6 +119,13 @@ nav ul li {
     text-decoration: none;
     
     
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
 /*logo*/
@@ -223,12 +230,6 @@ nav ul li a {
     width: 70%;
 }
 
-/* We Are Awesome Creative Agency */
-/* #flex_line {
-    grid-column: 2;
-    grid-row-start: 2;
-} */
-
 #hero h1 {
     color: var(--font-color-light);
     height: fit-content;
@@ -268,9 +269,14 @@ header #line {
 
 #our-story {
     height: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 #story-readable {
+    width: var(--content-width);
     height: 42%;
     display: flex;
     justify-content: center;
@@ -278,7 +284,7 @@ header #line {
 }
 
 #story-text {
-    max-width: 55%;
+    width: 60%;
     height: 100%;
     flex-grow: 1;
     display: flex;
@@ -287,30 +293,23 @@ header #line {
     align-items: flex-start;
 }
 
-#story-text h2 {
-    padding: 1em 0.25em;
-}
-
 #story-text p {
-    font-family: sans-serif;
-    font-size: 0.7vw;
-    padding: 1em;
-    padding-right: 40%;
+    padding: 1rem 0;
     line-height: 160%;
 }
 
 #big-logo {
+    width: 40%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     flex-grow: 1;
     height: 100%;
 }
 
 #big-logo img {
-    margin: 5%;
-    width: auto;
-    height: 60%;
+    width: 60%;
+    height: auto;
 }
 
 #story-watch {
@@ -321,6 +320,7 @@ header #line {
     align-items: center;
     justify-content: center;
     height: 58%;
+    width: 100%;
 }
 
 #story-watch div {
@@ -531,6 +531,8 @@ header #line {
 #contact {
     display: flex;
     height: 43vw;
+    width: var(--content-width);
+
 }
 
 #contact-container {
@@ -542,21 +544,26 @@ header #line {
 }
 
 #contact-container h2 {
-    width: 60%;
     padding-top: 16%;
-    padding-bottom: 2.5%;
+    padding-bottom: 5%;
+    width: 100%;
 }
 
 #contact-formular {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
 }
 
 .contact-input {
-    padding: 2.5%;
+    padding: 0.7vw;
     margin-bottom: 4.375%;
     font-family: "Roboto-Thin";
+    font-size: 0.7vw;
+}
+
+#contact-formular .button-link {
+    margin-top: 0;
 }
 
 #client-container {
@@ -567,33 +574,35 @@ header #line {
 #client-container h2 {
     padding-left: 10%;
     padding-top: 16%;
-    padding-bottom: 2.5%;
+    padding-bottom: 3%;
+    width: 100%;
 }
 
 #client-grid-container {
-    height: auto;
-    padding-left: 10%;
-    padding-right: 40%;
+    width: 100%;
+    margin-left: 10%;
+    height: 65%;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
-    column-gap: 20%;
-    row-gap: 0;
+    grid-template-columns: 45% 45%;
+    grid-auto-rows: 16%;
+    column-gap: 10%;
+    row-gap: 5%;
 }
 
 .client-grid-item {
-    height: 50%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5%;
 }
 
 .client-grid-item img {
-    height: 100%;
-    width: 100%;
+    min-width: 45%;
+    min-height: 60%;
+    max-width: 60%;
+    max-height: 100%;
 }
+
 
 /*footer*/
 footer {
@@ -643,7 +652,6 @@ footer .tajam-logo {
     text-transform: uppercase;
     text-align: left;
     font-weight: bold;
-    font-size: 1.5vw;
 }
 
 .footer-text {
