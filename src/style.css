@@ -256,8 +256,6 @@ header #line {
     align-items: flex-start;
 }
 
-#story-text h2 {}
-
 #story-text p {
     padding: 1rem 0;
     line-height: 160%;
@@ -492,7 +490,7 @@ header #line {
 
 #contact-container h2 {
     padding-top: 16%;
-    padding-bottom: 2.5%;
+    padding-bottom: 5%;
     width: 100%;
 }
 
@@ -503,9 +501,14 @@ header #line {
 }
 
 .contact-input {
-    padding: 2.5%;
+    padding: 0.7vw;
     margin-bottom: 4.375%;
     font-family: "Roboto-Thin";
+    font-size: 0.7vw;
+}
+
+#contact-formular .button-link {
+    margin-top: 0;
 }
 
 #client-container {
@@ -516,6 +519,7 @@ header #line {
 #client-container h2 {
     padding-left: 10%;
     padding-top: 16%;
+    padding-bottom: 3%;
     width: 100%;
 }
 
