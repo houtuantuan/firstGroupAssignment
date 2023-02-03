@@ -154,7 +154,7 @@ height: 75%;
 .tajam-logo-name {
     font-family: "Roboto-Thin";
     color: var(--logo_color);
-    font-size: 2rem;
+    font-size:  2.5vw;
     text-align: right;
 }
 
@@ -377,6 +377,7 @@ header #line {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     width: var(--content-width);
     grid-gap: 2px;
     background-color: var(--font-color-grey);
@@ -390,12 +391,12 @@ header #line {
     justify-content: center;
     align-items: center;
     height: 30vh;
-    width: 100%;
     background-color: var(--font-color-white);
 }
 
 .expertise-icon {
     height: 20%;
+    min-height: 20px;
 }
 
 .expertise-link {
